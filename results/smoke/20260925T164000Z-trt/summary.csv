@@ -1,0 +1,2 @@
+batch_size,concurrency,successful_repeats,failed_repeats,rps,p50_ms,p95_ms,p99_ms,actual_batch_mean,gpu_peak_mib
+48,128,1,0,218.9426127344975,578.6967300009564,871.3494974990681,969.5569435019934,16.32,7273.4375

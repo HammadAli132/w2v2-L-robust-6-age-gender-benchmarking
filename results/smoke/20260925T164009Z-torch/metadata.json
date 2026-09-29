@@ -1,0 +1,473 @@
+{
+  "started_utc": "20260925T164009Z",
+  "python": "3.12.14",
+  "torch": "2.15.0.dev20260925+cu130",
+  "torch_cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "device_total_mib": 7707.6875,
+  "nvidia_smi": "Fri Sep 25 21:40:09 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5060        Off |   00000000:01:00.0 Off |                  N/A |\n| 37%   35C    P1             11W /  145W |     551MiB /   8151MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            4851      G   /usr/bin/gnome-shell                      2MiB |\n|    0   N/A  N/A           35992      C   ...del-testing/.venv/bin/python3        530MiB |\n+-----------------------------------------------------------------------------------------+\n",
+  "config": {
+    "command": "run",
+    "backend": "torch",
+    "engine": "artifacts/fp16-30s-b48.engine",
+    "batches": [
+      48
+    ],
+    "concurrency": [
+      128
+    ],
+    "audio_dir": "data/audio",
+    "reference_audio": "data/reference/canterville.ogg",
+    "audio_budget": 240,
+    "duration": 3.0,
+    "repeats": 1,
+    "warmup": 3,
+    "delay_ms": 1,
+    "cpu_threads": 4,
+    "seed": 42
+  },
+  "single_model_instances": 1,
+  "single_execution_contexts": 1,
+  "input_samples": [
+    16000,
+    48000,
+    80000,
+    160000,
+    320000,
+    480000
+  ],
+  "recordings": 48,
+  "audio_manifest": [
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 0.0,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 25.571375,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 51.1428125,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 76.71425,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 102.2856875,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 127.857125,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 153.4285625,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 179.0,
+      "seconds": 1,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 0.0,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 25.2856875,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 50.571375,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 75.857125,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 101.1428125,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 126.4285625,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 151.71425,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 177.0,
+      "seconds": 3,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 0.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 25.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 50.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 75.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 100.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 125.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 150.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 175.0,
+      "seconds": 5,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 0.0,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 24.2856875,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 48.571375,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 72.857125,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 97.1428125,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 121.4285625,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 145.71425,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 170.0,
+      "seconds": 10,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 0.0,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 22.857125,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 45.71425,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 68.571375,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 91.4285625,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 114.2856875,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 137.1428125,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 160.0,
+      "seconds": 20,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 0.0,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 21.4285625,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 42.857125,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 64.2856875,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 85.71425,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 107.1428125,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 128.571375,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    },
+    {
+      "file": "data/reference/canterville.ogg",
+      "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+      "offset_seconds": 150.0,
+      "seconds": 30,
+      "original_sample_rate": 44100
+    }
+  ],
+  "measurement": "closed-loop, queue+normalization+padding+H2D+inference+D2H; excludes disk/audio decoding and HTTP",
+  "versions": {
+    "transformers": "4.57.6",
+    "onnx": "1.23.0",
+    "onnxruntime": "1.30.0",
+    "tensorrt-cu13": "10.16.1.11",
+    "numpy": "2.5.3",
+    "nvidia-ml-py": "13.610.43"
+  },
+  "code_sha256": {
+    "__main__.py": "5e158d2e5ec32995de294a218207b30fab4dd14d47d4d875e8b6ad7de88b4af8",
+    "validate.py": "5e32149e07c933eb4d07add9c4d7eece70b2d964a04683eee0df72542b682405",
+    "model.py": "39b9f6dffd9bf4409a7639256fab57ead316abac2d85b09b296699104a0f52f2",
+    "runtime.py": "62aa7e5c515c59cfff4d60e28a8aa9ba22525b222014d3cb9c3c92eb4376bfd7",
+    "prepare.py": "150de19671a906b0b3a3aa289b865114224e498f2805b17312ca5d7512c42fa3",
+    "__init__.py": "e892670b250d414077d86e1e650ad459fc9e01e22a28c36276a5455df46c857e",
+    "benchmark.py": "c480fd3110103f1c4984ce4c612f6ea0e02a0360a882fb682fa7f1aeb83839d9"
+  },
+  "validation": {
+    "passed": true,
+    "samples": 6,
+    "checks": {
+      "original_onnx_vs_normalized_torch": {
+        "max_age_error_years": 0.0003606081008911133,
+        "max_gender_logit_error": 3.1948089599609375e-05,
+        "gender_agreement": 1.0
+      },
+      "original_onnx_vs_raw_torch": {
+        "max_age_error_years": 11.977728843688965,
+        "max_gender_logit_error": 3.059523105621338,
+        "gender_agreement": 1.0
+      },
+      "mixed_padded_vs_individual_fp32": {
+        "max_age_error_years": 1.1920928955078125e-05,
+        "max_gender_logit_error": 9.5367431640625e-07,
+        "gender_agreement": 1.0
+      },
+      "long_mixed_vs_individual_fp32": {
+        "max_age_error_years": 1.1920928955078125e-05,
+        "max_gender_logit_error": 9.5367431640625e-07,
+        "gender_agreement": 1.0
+      },
+      "torch_fp16_vs_fp32": {
+        "max_age_error_years": 0.02791285514831543,
+        "max_gender_logit_error": 0.005041599273681641,
+        "gender_agreement": 1.0
+      },
+      "long_torch_fp16_vs_fp32": {
+        "max_age_error_years": 0.005233287811279297,
+        "max_gender_logit_error": 0.0029706954956054688,
+        "gender_agreement": 1.0
+      },
+      "exported_onnx_vs_fp32": {
+        "max_age_error_years": 0.0003427267074584961,
+        "max_gender_logit_error": 2.9087066650390625e-05,
+        "gender_agreement": 1.0
+      }
+    },
+    "audio_manifest": [
+      {
+        "file": "1.flac",
+        "sha256": "30885601173f96b0d8ddd020dc959b055c6c1582b85a33e3fcab8c4b08ed94c2",
+        "seconds": 10.435,
+        "original_sample_rate": 16000
+      },
+      {
+        "file": "2.flac",
+        "sha256": "3fc09ec6d4cc496c530b2019b17bd8fc8ef8a43d6697090971dd1d52cc3d4d89",
+        "seconds": 3.275,
+        "original_sample_rate": 16000
+      },
+      {
+        "file": "canterville.ogg",
+        "sha256": "3a7c94d683543dd4fef0bebe12bcddbd302ffba5367a3280ecd602ffcf481e85",
+        "seconds": 30.0,
+        "original_sample_rate": 44100
+      }
+    ],
+    "longest_checked_seconds": 30.0,
+    "tolerances": {
+      "age_years": 0.25,
+      "gender_logits": 0.03,
+      "gender_agreement": 1.0
+    }
+  },
+  "manifest": {
+    "model": "audeering/wav2vec2-large-robust-6-ft-age-gender",
+    "revision": "a681b720dafd12b9dd7b6d13fb437c7b6b197fd3",
+    "weights_sha256": "4a0f33264b690efcdee7d6cb803404486f9f93fd58355bbb0e6aa6f40db1e2e8",
+    "original_onnx_sha256": "75c5cc3debc2013215cee5f331a66b59bd7205da170fb61abab46fc4507df7be"
+  }
+}
